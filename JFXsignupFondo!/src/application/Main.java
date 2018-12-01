@@ -12,12 +12,10 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("interfaz.fxml"));
-
-			BorderPane root = new BorderPane();
 			AnchorPane pane = loader.load();
 			Scene scene = new Scene(pane);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			primaryStage.setTitle("");
+			primaryStage.setTitle("Signup");
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (Exception e) {
